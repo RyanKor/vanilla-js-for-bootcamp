@@ -45,3 +45,21 @@
 
 - 스타크래프트 프로선수들 경기 유튜브를 많이 본다고 게임 잘하는 것이 아니듯, 프로그래밍도 강의 영상 많이 본다고 잘한는 것이 절대 아니다.
 - 결국 게임이나 코딩 모두 따라 쳐보면서 실제로 어떻게 작동하는지를 이해하는 것이 중요한 과정이다
+
+4. ES6 Syntax Coding Challenge Review (2020.06.14)
+
+- 여기서 배우게 되는 ES6 문법과 Class 개념은 Budget App 과제 다음으로 중요한 내용이다.
+- `Reduce`, `Filter`, `Map`, `forEach` 등의 개념을 구분해가면서 필요한 상황에 사용할 수 있는가?
+
+5. Promise / Async / Await (2020.06.15)
+
+- `Promise`의 작동 원리에 대한 이해
+- Object that keeps track about whether a certain event has happened already or not.
+- Determines what happened after the event has happened.
+- Implements the concept of a future value that we are expecting.
+
+6. Food Recipe App (2020.06.15)
+
+- Modern JS를 활용한 App의 최종본
+- Udemy The Complete Javascript Course 2020: Build Real Projects!의 최종장
+- 결국 Budget App, Class Practice, Recipe App 이 3개가 이 수업의 핵심이다.
