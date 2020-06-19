@@ -1,3 +1,5 @@
+
+
 # 자바스크립트 공부 방향성 단계 정리
 
 - 일전에 자바스크립트 + Jquery 완전 정복 스터디라는 책을 보게 되었다.
@@ -28,37 +30,46 @@
 
 ## 학습 리뷰
 
-1. Budget App을 제작하는 과정(2020.06.10)
+1. **Budget App을 제작하는 과정(2020.06.10)**
 
 - Budget APP을 ES5 문법으로 제작하는 과정이 JS 전 과정을 다룬다고 할 정도로 내용이 충실하다.
+
 - 해당 내용을 3번 정도 복습해보고, ES6 문법을 활용해서 코드 양을 줄이고, 새롭게 추가된 내장 메소드를 사용해서 전반적인 코드를 Refactoring 해보는 작업을 겪어보는 것이 필요하다.
 
-2. ES6 문법에 대한 재조명 (2020.06.13)
+  ![Budget_app](./budget_app.png)
+
+2. **ES6 문법에 대한 재조명 (2020.06.13)**
 
 - 자바스크립트를 너무 몰랐다고 생각할 정도로 ES6 문법이 다채롭다.
+
 - 기존에 알던 것은 const, let, arrow function 정도가 전부였는데, 내장 메소드가 꽤 추가된 것을 확인할 수 있다.
+
 - 아직까지 내가 상당히 무지하다는 점을 새삼 다시 느끼게 된다.
+
 - 강의에서 다루는 Budget App을 충분히 활용하고, 기능을 추가해서 내용물을 내 것으로 완전하게 소화하는 과정을 반드시 겪어야한다.
+
 - ES6에서 추가된 ...문법의 경우, 파이썬에서 사용하는 \*kwarg와 역할이 동일한 것 같다. 전달받는 인자 값이 몇 개인지 모를 때 전부 받아오는 형태의 문법이라 이해하면 될 것 같다.
 
-3. 스타크래프트도 프로선수들 영상 많이 본다고 잘하는 것은 아니다 (2020.06.13)
+  ![Dice_app](./dice_app.png)
+
+3. **스타크래프트도 프로선수들 영상 많이 본다고 잘하는 것은 아니다 (2020.06.13)**
 
 - 스타크래프트 프로선수들 경기 유튜브를 많이 본다고 게임 잘하는 것이 아니듯, 프로그래밍도 강의 영상 많이 본다고 잘한는 것이 절대 아니다.
 - 결국 게임이나 코딩 모두 따라 쳐보면서 실제로 어떻게 작동하는지를 이해하는 것이 중요한 과정이다
 
-4. ES6 Syntax Coding Challenge Review (2020.06.14)
+4. **ES6 Syntax Coding Challenge Review (2020.06.14)**
 
 - 여기서 배우게 되는 ES6 문법과 Class 개념은 Budget App 과제 다음으로 중요한 내용이다.
 - `Reduce`, `Filter`, `Map`, `forEach` 등의 개념을 구분해가면서 필요한 상황에 사용할 수 있는가?
 
-5. Promise / Async / Await (2020.06.15)
+5. **Promise / Async / Await (2020.06.15)**
 
 - `Promise`의 작동 원리에 대한 이해
 - Object that keeps track about whether a certain event has happened already or not.
 - Determines what happened after the event has happened.
 - Implements the concept of a future value that we are expecting.
 
-6. Food Recipe App (2020.06.15)
+6. **Food Recipe App (2020.06.15)**
 
 - Modern JS를 활용한 App의 최종본
 - Udemy The Complete Javascript Course 2020: Build Real Projects!의 최종장
@@ -66,13 +77,31 @@
 - package.json 설치 -> npm init
 - React로 연결되는 Self Webpack setting, package.json 등을 굉장히 디테일하게 알려준다.
 
-7. JS Execution Process (HTML에서 script로 읽어들일 때)
+![Recipe_app](./recipe_app.png)
+
+7. **JS Execution Process (HTML에서 script로 읽어들일 때)**
 
 - JS가 HTML body 태그 하단에서 보통 fetch되어서 (다운로드 되어서) Execute하는 경우
 - JS를 `<head>`에 추가해서 fetch하는 경우 (최악의 JS 로딩 방법)
 - Async를 사용하는 방법 -> 여전히 Parsing HTML을 하면서 Blocking이 발생함
 - 최선의 선택은 `<script defer src='./file.js'>` 이런 형태로 호출하는 것이다.
 
-8. Node를 사용해서 서버를 구성하고, e.js를 구성해서 JS 풀스택을 구성하는 방법
+8. **Node를 사용해서 서버를 구성하고, e.js를 구성해서 JS 풀스택을 구성하는 방법**
 
--
+- Routing을 사용하는 방법과 nodemon 등의 라이브러리를 사용해 프로젝트를 작업한다.
+- 이 Udemy 강의의 마지막 내용인데, Node.js로 연결되는 접점을 제공한다.
+- 이 강의에서 React.js 환경 설정을 잡는 것과 Node.js 설정을 잡는 것이 인상적이다.
+- Babel이 없다는 상황을 가정해보면, 결국 React.js나 Node.js 모두 Vanilla JS로 코드를 작업할 수 있다는 뜻을 내포하고 있다.
+
+![Node_app](./node_final.png)
+
+
+
+9. 마치며...
+
+- HTML, CSS, JS를 잘 이해하고 활용한다는 것은 무궁무진한 가능성을 내포한다.
+- 위의 내용들은 정말 기초의 기초다. HTML, CSS, JS를 극한까지 잘 다루는 것은 아래의 이미지를 만들 수 있다는 것과 같다.
+
+![Solar_system](./solar_system.png)
+
+- JS를 극한까지 두드리자.
