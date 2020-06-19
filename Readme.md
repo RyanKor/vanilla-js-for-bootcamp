@@ -63,3 +63,16 @@
 - Modern JS를 활용한 App의 최종본
 - Udemy The Complete Javascript Course 2020: Build Real Projects!의 최종장
 - 결국 Budget App, Class Practice, Recipe App 이 3개가 이 수업의 핵심이다.
+- package.json 설치 -> npm init
+- React로 연결되는 Self Webpack setting, package.json 등을 굉장히 디테일하게 알려준다.
+
+7. JS Execution Process (HTML에서 script로 읽어들일 때)
+
+- JS가 HTML body 태그 하단에서 보통 fetch되어서 (다운로드 되어서) Execute하는 경우
+- JS를 `<head>`에 추가해서 fetch하는 경우 (최악의 JS 로딩 방법)
+- Async를 사용하는 방법 -> 여전히 Parsing HTML을 하면서 Blocking이 발생함
+- 최선의 선택은 `<script defer src='./file.js'>` 이런 형태로 호출하는 것이다.
+
+8. Node를 사용해서 서버를 구성하고, e.js를 구성해서 JS 풀스택을 구성하는 방법
+
+-
