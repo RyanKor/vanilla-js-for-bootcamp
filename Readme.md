@@ -1,5 +1,3 @@
-
-
 # 자바스크립트 공부 방향성 단계 정리
 
 - 일전에 자바스크립트 + Jquery 완전 정복 스터디라는 책을 보게 되었다.
@@ -85,6 +83,8 @@
 - JS를 `<head>`에 추가해서 fetch하는 경우 (최악의 JS 로딩 방법)
 - Async를 사용하는 방법 -> 여전히 Parsing HTML을 하면서 Blocking이 발생함
 - 최선의 선택은 `<script defer src='./file.js'>` 이런 형태로 호출하는 것이다.
+- JS에서 type of (null)을 입력하면 객체(object)가 반환되는데, 해당 부분은 버그라고 해도 할 말이 없다. (Learning JS by O'Reilly)
+- null이 다른 코드에서 원시 값(Primitive)으로 취급하는 것과 반해 차이가 있는데, 이미 너무 많이 이 사실을 사용하는 코드가 생겨났고, 공식 문서에도 기록되어 변경하기가 어렵다는 것이 정설인 것 같다.
 
 8. **Node를 사용해서 서버를 구성하고, e.js를 구성해서 JS 풀스택을 구성하는 방법**
 
@@ -95,8 +95,6 @@
 
 ![Node_app](./node_final.png)
 
-
-
 9. 마치며...
 
 - HTML, CSS, JS를 잘 이해하고 활용한다는 것은 무궁무진한 가능성을 내포한다.
@@ -104,4 +102,10 @@
 
 ![Solar_system](./solar_system.png)
 
+- Liscense by [3D Solar System with Code pen](https://codepen.io/juliangarnier/pen/idhuG?__cf_chl_jschl_tk__=cdec3c55e32622f5fd94e8f66e4e218ae4286ead-1592585152-0-AU7sLT2BOPCtkAfAUfmOyW7qLOVRHGzuhCoLLlrpJ-gdbyIpgFsdHmm9OIoD56ANdRjX-VVQJrZ1f4wHDAhI2gDTq0_NDt0oVynEMvzEbDm1TnZos6q_PEdeXwltKeUFmzOmKVvXH0kg03O86jqJ4Z6Uk24BAiHa24HBZWmkQBhRbaRS1dnvq-nEJkSK8_LJ6Jc0JhXP8yshnGuOO4Eph-tb67AQBvUV72oSzZ0WY0rqezBoPNxldUDK0yfWMvk3XCou94Sz7ftOpgwbLRlNyTbml4eOWwCyTD_lj8i_bMgK9m6ApOYXojCbOC24VyTLODo19iTndzH5VStl0Uc9R97N6EapsfSpURK4yxgYtlBk)
 - JS를 극한까지 두드리자.
+
+**p.s.)**
+
+- Map 객체 (자바스크립트 내장 메소드인 .map이 아닌 객체가 있다)
+- Map 객체는 키-값 쌍을 저장하며 각 쌍의 삽입 순서도 기억하는 콜렉션입니다. 아무 값(객체와 원시 값)이라도 키와 값으로 사용할 수 있습니다.
